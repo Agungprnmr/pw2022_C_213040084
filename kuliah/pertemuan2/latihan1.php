@@ -51,5 +51,5 @@ echo ++$x;
 $nama_depan = "Agung";
 $nama_belakang = "Purnama";
 echo $nama_depan . " " . $nama_belakang;
-
+    
 ?>
