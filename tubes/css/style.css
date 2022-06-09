@@ -1,0 +1,37 @@
+
+.navbar-brand {
+    color: rgb(0, 0, 0);
+    font-family: "Lobster", cursive;
+}
+
+.navbar-brand:hover {
+    color: white;
+    transition: .10s ;
+    font-family: "Lobster", cursive;
+}
+
+.navbar-nav.ms-auto li a{
+    font-family: "Lobster", cursive;
+    color: rgb(21, 20, 20);
+}
+.navbar-nav.ms-auto li a:hover {
+    color: white;
+}
+
+.ren-button {
+    padding-left: 70px;
+}
+
+.home-user {
+    text-align: center;
+    font-family: cursive;
+}
+
+.home-admin {
+    text-align: center;
+}
+
+.input-group {
+    padding-left: 360px;
+    padding-bottom: 20px;
+}
