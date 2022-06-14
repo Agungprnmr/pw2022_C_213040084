@@ -76,8 +76,5 @@ if(isset($_POST["registrasi"]) ) {
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 
-<a href="registrasi.php">Daftar</a>
-<a href="index.php">Home</a>
-
 	</body>
 </html

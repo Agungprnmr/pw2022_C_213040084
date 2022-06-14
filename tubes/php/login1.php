@@ -20,11 +20,11 @@ if (isset($_POST['login'])) {
 			if ($row['role']=="admin") {
 				$_SESSION['id_admin'] = $row['id'];
 				$_SESSION['role'] = "admin";
-              	header("location:homeadmin.html");
+              	header("location:homeadmin.php");
 			} else if ($row['role']=="user") {
 				$_SESSION['id_user'] = $row['id'];
 				$_SESSION['role'] = "user";
-              	header("location:homeuser.html");
+              	header("location:homeuser.php");
 			}
 		}
 	}
@@ -89,7 +89,7 @@ if (isset($_POST['login'])) {
 								<br>
 								<br>
 
-								<a href="index.html" class="btn btn-primary">Home</a>
+								<a href="index.php" class="btn btn-primary">Home</a>
 								</div>
 				</div>
 	            </div>

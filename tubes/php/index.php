@@ -1,3 +1,7 @@
+<?php require 'functions.php';
+$entertainment = query("SELECT * FROM entertainment");
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -47,59 +51,23 @@
 			</div>
 		</section>
 
-    <section class="dishes" id="dishes">
+<section class="dishes" id="dishes">
 
-      <h3 class="sub-heading"> Rekomendasi Movies</h3>
+    <h3 class="sub-heading"> Rekomendasi Movies</h3>
+		<div class="box-container">
+        	<?php foreach ($entertainment as $ent) :?>
 
-      <div class="box-container">
+                <div class="box">
+                <img src="../img/<?= $ent['gambar'] ?>"alt="...">
+                <h3><?= $ent['nama'] ?></h3>
 
-          <div class="box">
-              <img src="../img/memory.jpeg" alt="">
-              <h3>Memory</h3>
-              <div class="stars">
-              </div>
-              <a href="login1.php" class="btn">Detail</a>
-          </div>
-          <div class="box">
-              <img src="../img/uncharted1.jpeg" alt="">
-              <h3>Uncharted</h3>
-              <div class="stars">
-              </div>
-              <a href="login1.php" class="btn">Detail</a>
-          </div>
-          <div class="box">
-              <img src="../img/the lost city.jpeg" alt="">
-              <h3>The Lost City</h3>
-              <div class="stars">
-              </div>
-              <a href="login1.php" class="btn">Detail</a>
-          </div>
-          <div class="box">
-              <img src="../img/sonic.jpg" alt="">
-              <h3>Sonic the Hedgehog 2</h3>
-              <div class="stars">
-              </div>
-              <a href="login1.php" class="btn">Detail</a>
-          </div>
-          <div class="box">
-              <img src="../img/doctor.png" alt="">
-              <h3>Doctor Strange in the Multiverse of Madness</h3>
-              <div class="stars">
-              </div>
-              <a href="login1.php" class="btn">Detail</a>
-          </div>
-          <div class="box">
-              <img src="../img/spiderman.jpg" alt="">
-              <h3>Spider-Man: No Way Home</h3>
-              <div class="stars">
-              </div>
-              <a href="login1.php" class="btn">Detail</a> 
-          </div>
-
-
-      </div>
-
-  </section>
+                <div class="starts">
+                </div> 
+                <a href="login1.php" class="btn"> Detail </a>
+            	</div>
+        	<?php endforeach; ?>
+		</div>
+</section>
 
 		
 		<a href="#" class="scrollup" id="scroll-up">

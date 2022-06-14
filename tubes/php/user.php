@@ -50,10 +50,10 @@ if(isset($_GET["cari"])) {
         <ul class="navbar-nav ms-auto">
         <a href="user.php" class="btn btn-primary">Refresh</a>
           <li class="nav-item">
-            <a class="nav-link active" href="homeuser.html">Beranda</a>
+            <a class="nav-link active" href="homeuser.php">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Logout</a>
+            <a class="nav-link" href="index.php">Logout</a>
           </li>
         </ul>
       </div>
